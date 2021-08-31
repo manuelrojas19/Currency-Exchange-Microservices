@@ -18,7 +18,8 @@ public class ApiGatewayConfiguration {
                 route(predicateSpec ->
                         predicateSpec.path(CURRENCY_EXCHANGE_PATH).uri(CURRENCY_EXCHANGE_URI)
                 ).
-                route(predicateSpec -> predicateSpec.path(CURRENCY_CONVERSION_PATH).uri(CURRENCY_CONVERSION_URI)).
+                route(predicateSpec ->
+                        predicateSpec.path(CURRENCY_CONVERSION_PATH).uri(CURRENCY_CONVERSION_URI)).
                 build();
     }
 }
